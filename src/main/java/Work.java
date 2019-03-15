@@ -59,6 +59,9 @@ public class Work {
         return true;
     }
 
+    private static boolean check(){
+        return true;
+    }
 
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
         System.out.println( checkConst(TestWork.class));
