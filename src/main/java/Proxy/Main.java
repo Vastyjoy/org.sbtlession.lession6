@@ -5,8 +5,6 @@ package Proxy;
 import Proxy.cacheproxy.CacheProxy;
 import Proxy.services.Calculator;
 import Proxy.services.CalculatorImpl;
-import Proxy.services.ListGenerator;
-import Proxy.services.ListGeneratorImpl;
 
 import java.util.List;
 
@@ -20,11 +18,7 @@ public class Main {
         System.out.println(proxyCalculator.calc("2!", 2));
         System.out.println(proxyCalculator.calc("5!", 5));
         System.out.println(proxyCalculator.calc("1!", 1));
+        System.out.println(proxyCalculator.calc("5!",5));
 
-        ListGenerator listGenerator = CacheProxy.cacheFactory(new ListGeneratorImpl(),
-                "C:\\Users\\Alex\\IdeaProjects\\lession6");
-        List<Integer> list = listGenerator.generate(1_000_000);
-
-   //     System.out.println(list);
     }
 }
