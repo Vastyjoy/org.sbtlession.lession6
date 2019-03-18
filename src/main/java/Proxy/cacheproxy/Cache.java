@@ -17,5 +17,4 @@ public @interface Cache {
     String fileNamePrefix() default "";
     boolean zip() default false;
     byte[] identityBy() default {};
-    int listSize() default -1;
 }

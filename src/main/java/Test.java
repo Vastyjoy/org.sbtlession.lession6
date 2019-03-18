@@ -79,7 +79,7 @@ public class Test {
             //Изменнений произойти не должно
             System.out.println("_________________________________________________________________________");
             BeanUtils.assign(d,f);
-            System.out.println("d после операции assign(d,f), d должен Вывести name=MegaSuper т.к. поле является потомком MegaSuper");
+            System.out.println("d после операции assign(d,f), d должен Вывести name=MegaSuper т.к. поле не является потомком MegaSuper");
             System.out.println(d.toString());
 
             //Проверка установки классу d(который содержит родителя) полей класса e(который является потмком)

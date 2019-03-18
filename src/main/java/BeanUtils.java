@@ -79,7 +79,7 @@ public class BeanUtils {
                 if (setFieldName.equals(getFieldName))
                     if (getReturnClass.isPrimitive() && getReturnClass.equals(setMethodParam))
                         setMethod.invoke(to, getMethod.invoke(from));
-                    else if (checkSuper(getReturnClass, setMethodParam))
+                    else if (getReturnClass.isInstance(setMethodParam))
                         setMethod.invoke(to, getMethod.invoke(from));
 
             }
